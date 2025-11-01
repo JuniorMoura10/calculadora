@@ -30,17 +30,33 @@ void divisao(){
   print("O valor da divisão entre $numero1 e $numero2 é $total");
 }
 
- if(selecao == 1){
+//  if(selecao == 1){
+//     soma();
+//   }else if(selecao == 2){
+//     subtracao();
+//   }else if(selecao == 3){
+//     multiplicacao();
+//   }else if(selecao == 4){
+//     divisao();
+//   }else{
+//     print("Escolha uma operação!");
+//     print("Ok! E qual a operação gostaria de realizar?");
+//     int selecao = int.parse(stdin.readLineSync()!);
+//   }
+
+switch(selecao){
+  case 1:
     soma();
-  }else if(selecao == 2){
+  case 2:
     subtracao();
-  }else if(selecao == 3){
+  case 3:
     multiplicacao();
-  }else if(selecao == 4){
+  case 4:
     divisao();
-  }else{
+  default:
     print("Escolha uma operação!");
     print("Ok! E qual a operação gostaria de realizar?");
     int selecao = int.parse(stdin.readLineSync()!);
-  }
+  break;
+}
 }
